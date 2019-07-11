@@ -1,4 +1,4 @@
-First Download the dataset form the link below and put the 'data' folder into 'tf_files' folder<br>
+First Download the dataset form the link below and put the 'data' folder into 'tf_files' folder(Create this folder first)<br>
 link: https://drive.google.com/open?id=1p4QEXt5a4EHlhcRYsNfEGqr1BAAGDn0d<br>
 <br>
 Then watch this youtube video to know how this project works:<br>
