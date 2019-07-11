@@ -1,0 +1,13 @@
+#tensorboard:
+
+tensorboard --logdir tf_files/training_summaries &
+
+#Train:
+
+python -m retrain //--bottleneck_dir=tf_files/bottlenecks //--model_dir=tf_files/modulels --summaries_dir=tf_files/training_summaries/"${ARCHITECTURE}" --output_graph=tf_files/retrained_graph.pb --how_many_training_steps=3000 --output_labels=tf_files/retrained_labels.txt --image_dir=tf_files/data
+
+
+
+##working test 
+
+python -m label_image --graph=tf_files/retrained_graph.pb --image=test2.JPG --labels=tf_files/retrained_labels.txt --input_layer=Mul --output_layer=final_result --input_height=299 --input_width=299
